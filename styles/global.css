@@ -60,7 +60,7 @@ nav ul li:hover {
     border-bottom: 3px solid var(--primary-color);
 }
 
-nav ul li:hover > a {
+nav ul li:hover a {
     color: var(--primary-color);
 }
 
@@ -90,6 +90,54 @@ nav .logo:hover {
 
 nav .logo:hover a {
     color: white;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    background-color: white;
+    position: absolute;
+    padding-left: 0;
+    width: 125px;
+    border-radius: 4px;
+    top: 59px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+nav ul li ul li {
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav ul li:hover ul li a {
+    color: var(--footer-color1);
+}
+
+nav ul li ul li a {
+    font-size: 0.8em;
+    font-weight: 400;
+    
+}
+
+nav ul li ul li:hover {
+    background-color: #3362cf;
+    border: none;
+}
+
+nav ul li ul li:hover a {
+    color: white;
+}
+
+nav ul li:hover ul {
+    display: flex;
 }
 
 footer .footer {
