@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+:root {
+    --text-color: #e2cfd1;
+    --h-color: #231415;
+    --primary-color: #2557CB;
+    --secondary-color: #FF5216;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.shadow {
+    width: 100%;
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50%;
+    z-index: 1;
+}
+
+nav ul {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: calc(-65% / 2);
+    width: 65%;
+    z-index: 2;
+}
+
+nav ul li {
+    float: right;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: ease-in-out 150ms;
+}
+
+nav ul li:hover {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+nav ul li:hover > a {
+    color: var(--primary-color);
+}
+
+nav .logo {
+    float: left;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav .logo a {
+    color: var(--text-color);
+    font-size: 2.5em;
+    color: white;
+}
+
+nav .logo a span {
+    font-weight: 700;
+    background-image: linear-gradient(30deg, #4771D3, #0A3087);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .logo:hover {
+    border: none;
+}
+
+nav .logo:hover a {
+    color: white;
+}

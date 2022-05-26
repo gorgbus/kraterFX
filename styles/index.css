@@ -1,0 +1,123 @@
+header {
+    height: 700px;
+    width: 100%;
+    background-color: var(--h-color);
+    overflow: hidden;
+    position: relative;
+}
+
+header figure {
+    position: relative;
+    width: 400%;
+    left: 0;
+    margin: 0;
+    animation: 20s slide infinite;
+}
+
+header .showcase {
+    height: 100%;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+header .info {
+    position: absolute;
+    left: calc(35% / 2);
+    top: calc(100% / 2.75);
+    z-index: 1;
+}
+
+header .info h1, h3 {
+    margin: 0;
+}
+
+header .info h3 {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+header .info h1 {
+    color: white;
+    font-weight: 500;
+}
+
+header .showcase img {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    z-index: 1;
+}
+
+header .bg {
+    background-color: var(--secondary-color);
+    height: 700px;
+    width: 40%;
+    float: right;
+    position: relative;
+}
+
+header .bg:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 700px solid transparent;
+    border-bottom: 700px solid var(--secondary-color);
+    border-left: 700px solid transparent;
+    border-right: 0px solid var(--secondary-color);
+    position: absolute;
+    top: -700px;
+    left: -700px;
+}
+
+header .showcase:nth-child(2) .bg {
+    background-color: var(--primary-color);
+}
+
+header .showcase:nth-child(2) .bg:before {
+    border-bottom: 700px solid var(--primary-color);
+    border-right: 0px solid var(--primary-color);
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 0;
+    }
+    55% {
+        left: -100%;
+    }
+    95% {
+        left: -100%;
+    }
+    100% {
+        left: -200%;
+    }
+}
+
+.wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 3;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
