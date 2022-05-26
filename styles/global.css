@@ -2,6 +2,7 @@
 
 :root {
     --text-color: #e2cfd1;
+    --bg-gray-color: #f3e2e4;
     --footer-color1: #2c2224;
     --footer-color2: #231415;
     --primary-color: #2557CB;
@@ -14,7 +15,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow-y: overlay;
+    overflow: overlay;
     overflow-x: hidden;
 }
 
@@ -187,11 +188,11 @@ footer .copyright p {
 
 ::-webkit-scrollbar {
     width: 5px;
-    background-color: none;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: none;
+    background-color: transparent;
     border-radius: 5px;
 }
 

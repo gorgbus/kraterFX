@@ -58,11 +58,7 @@ header section button {
     padding: 10px;
     transition: ease-in-out 150ms;
     cursor: pointer;
-}
-
-header section button a {
     color: white;
-    text-decoration: none;
 }
 
 header section button:hover {
