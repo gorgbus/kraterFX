@@ -10,6 +10,10 @@
     --header-bg-color: #4876e4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Poppins, sans-serif;
     height: 100%;
@@ -245,5 +249,5 @@ footer .copyright p {
 }
 
 :hover::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: darkgrey;
 }

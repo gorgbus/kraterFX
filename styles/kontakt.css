@@ -1,0 +1,74 @@
+header {
+    height: 450px;
+    background-image: linear-gradient(60deg, var(--secondary-color), var(--primary-color));
+    position: relative;
+}
+
+header section {
+    position: absolute;
+    left: calc(35% / 2);
+    top: 30%;
+}
+
+header section h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 3.5em;
+}
+
+main {
+    position: relative;
+    height: 1200px;
+}
+
+main section {
+    position: absolute;
+    left: calc(35% / 2);
+    width: 65%;
+    top: 50px;
+}
+
+main section:last-child {
+    top: 40%
+}
+
+main section iframe {
+    float: right;
+    max-width: 55%;
+}
+
+main section h2, h3, p, a, td {
+    color: var(--footer-color1);
+    text-decoration: none;
+}
+
+main section a {
+    color: var(--primary-color);
+}
+
+main section h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+main section caption {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+main section td {
+    padding: 5px 10px;
+}
+
+main section td a {
+    margin-left: 100%;
+}
+
+footer .footer p {
+    color: var(--text-color);
+}
+
+footer .copyright p {
+    color: var(--text-color);
+}

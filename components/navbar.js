@@ -15,11 +15,10 @@ class Navbar extends HTMLElement {
                         <a href="./produkty.html">Produkty</a>
 
                         <ul>
-                            <li><a href="./movx.html">movX Pro</a></li>
-                            <li><a href="./paintx.html">paintX Pro</a></li>
+                            <li onclick="window.location.href='./movx.html'"><a href="./movx.html">movX Pro</a></li>
+                            <li onclick="window.location.href='./paintx.html'"><a href="./paintx.html">paintX Pro</a></li>
                         </ul>
                     </li>
-                    <li><a href="./o_nas.html">O nás</a></li>
                 </ul>
             </nav>
         `;

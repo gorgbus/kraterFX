@@ -13,20 +13,16 @@ class Footer extends HTMLElement {
 
                 <ul class="top">
                     <li>
-                        <a href="./o_nas.html">O nás</a>
-                    </li>
-
-                    <li>
                         <a href="./kontakt.html">Kontakt</a>
 
                         <ul>
-                            <li><a href="./kontakt.html#pripoj">Připojit se</a></li>
+                            <li><a href="./kontakt.html#kontakt">Kontakt</a></li>
                             <li><a href="./kontakt.html#zamestnanci">Zaměstnanci</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="./prokudty.html">Produkty</a>
+                        <a href="./produkty.html">Produkty</a>
 
                         <ul>
                             <li><a href="./movx.html">movX Pro</a></li>
